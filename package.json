@@ -2,11 +2,11 @@
   "name": "hexa",
   "version": "1.0.0",
   "description": "hexa test",
-  "main": "src/index.html",
+  "main": "index.html",
   "scripts": {
     "start": "gulp"
   },
-  "author": "Maria Mahina",
+  "author": "Mariia Makhina",
   "license": "ISC",
   "devDependencies": {
     "browser-sync": "^2.26.5",
