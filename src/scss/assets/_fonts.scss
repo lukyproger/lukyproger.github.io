@@ -1,0 +1,48 @@
+
+@font-face {
+  font-family: ProximaNova;
+  src: url('../../fonts/ProximaNova/ProximaNova-Regular.ttf');
+   src: url('../../fonts/ProximaNova/ProximaNova-Regular.eot') format('embedded-opentype'),
+   url('../../fonts/ProximaNova/ProximaNova-Regular.eot') format('woff'),
+   url('../../fonts/ProximaNova/ProximaNova-Regular.ttf') format('truetype'),
+ }
+
+ @font-face {
+  font-family: Intro;
+  src: url('../../fonts/Intro/Intro-Regular.otf');
+ }
+
+ @font-face {
+  font-family: IntroItalic;
+  src: url('../../fonts/Intro/Intro-Regular-Italic.otf');
+ }
+
+ @font-face {
+  font-family: IntroItalicBold;
+  src: url('../../fonts/Intro/Intro-Bold-Italic.ttf');
+ }
+
+ @font-face {
+  font-family: 'fontello';
+  src: url('../../fonts/fontello/fontello.eot?93907958');
+  src: url('../../fonts/fontello/fontello.eot?93907958#iefix') format('embedded-opentype'),
+       url('../../fonts/fontello/fontello.woff2?93907958') format('woff2'),
+       url('../../fonts/fontello/fontello.woff?93907958') format('woff'),
+       url('../../fonts/fontello/fontello.ttf?93907958') format('truetype'),
+       url('../../fonts/fontello/fontello.svg?93907958#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon:before {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+ 
+  display: inline-block;
+  text-decoration: inherit;
+  text-align: center;
+}
+.icon-arrow-left:before { content: '\f007'; } 
+.icon-arrow-right:before { content: '\f006'; } 

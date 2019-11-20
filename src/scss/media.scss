@@ -1,0 +1,224 @@
+/* Large Devices, Wide Screens */
+@include max-screen($wide-screen) {
+    .navbar-phone{
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 1024px){
+
+    .home-advantages{
+        background: rgba($color: #fff, $alpha: 1.0);
+    }
+}
+
+/* Medium Devices, Desktops */
+@include max-screen($screen-desktop) {
+
+    .navbar-nav a{
+        padding: 0 25px!important;
+    }
+    .home-content{
+        &-title{
+            font-size: 60px;
+        }
+        &-subtitle{
+            font-size: 28px;
+        }
+        &-subtitle span{
+            padding: 0 40px;
+        }
+        &-price-number {
+            font-size: 36px;
+            margin: 0 5px;
+        }
+        &-slider {
+            left: -34px;
+        }
+    }
+    .home-advantages{
+        position: relative;
+    }
+
+}
+
+/* Small Devices, Tablets */
+@include max-screen($screen-tablet) {
+
+    .navbar{
+        &-brand{
+            padding-left: 0;
+        }
+        &-phone, &-button{
+            display: none;
+        }
+        &-nav{
+            flex-direction: column;
+            align-items: center;
+            margin: 40px 0 20px;
+        }
+        &-nav a{
+            border-right: none;
+            padding: 0!important;
+        }
+    
+        &-header{
+            margin: 0!important;
+        }
+        &-toggle{
+            margin-right: 0;
+        }
+        &-collapse{
+            background: rgba(0, 0, 0, 0.85);
+            .container{
+                height: 100vh;
+            }
+        }
+        &-contacts-mob{
+            display: block;
+
+            .navbar-phone, .navbar-button{
+                display: block;
+            }
+            .navbar-phone{
+                font-size: 20px;
+                color: #fff;
+                text-align: center;
+                margin: 0;
+            }
+            .navbar-button{
+                font-size: 18px;
+                margin: 10px auto 40px;
+            }
+        }
+    }
+
+    .home-content{
+        padding: 10px 0 20px;
+        max-width: 100%;
+        margin-top: 0;
+        &:before{
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+
+        &-header{
+            padding-left: 20px;
+            &:before{
+                left: 0;
+            }
+        }
+        &-slider{
+            left: -26px;
+        }
+    } 
+
+    .home-advantages-text{
+        margin-bottom: 20px;
+    }
+
+}
+
+/* Extra Small Devices, Phones */
+@include max-screen($screen-phones) {
+
+    .navbar{
+        &-brand{
+            padding-right: 10px;
+            font-size: 24px;
+            letter-spacing: 1px;
+        }
+        &-slogan{
+            font-size: 10px;
+        }
+        &-toggle{
+            padding: 7px 8px;
+        }
+    }
+
+    .home-content{
+        padding: 10px 0 0;
+        &:before{
+            transform: none;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        &-title {
+            font-size: 30px;
+            margin: 15px 0 10px;
+        }
+        &-header{
+            margin-top: 20px;
+        }
+    
+        &-subtitle {
+            font-size: 18px;
+            span {
+                padding: 0 10px;
+                margin: 5px 0 10px;
+            }
+            span:after{
+                width:100%;
+                left: 0;
+                height: 2px;
+            }
+        }
+        &-price-text{
+            font-size: 12px;
+            letter-spacing: 0;
+            margin: 0 5px;
+        }
+        &-price-number {
+            font-size: 22px;
+        }
+        &-text{
+            font-size: 15px;
+            margin: 15px 0;
+            letter-spacing: 0;
+        }
+        &-button{
+            font-size: 16px;
+            margin: 0 auto;
+        }
+        &-controls{
+            margin: 20px 0;
+            justify-content: center;
+        }
+    }
+
+    .home-advantages-title{
+        margin: 10px 0;
+    }
+
+    .home-slider-img{
+        &-slide{
+            min-height: auto;
+        }
+    }
+    
+    .slick-dots{
+        margin: 0 10px;
+        
+        li{
+            margin: 5px 7px;
+        }
+        li.slick-active button{
+            &:after{
+                transform: translate(-50%, -50%);
+            }
+        }
+        button{
+            width: 12px;
+            height: 11px;
+        }
+    }
+
+    .slick-arrow{
+        font-size: 26px;
+    }  
+  
+}
